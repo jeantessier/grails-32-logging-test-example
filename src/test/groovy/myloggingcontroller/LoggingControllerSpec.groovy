@@ -14,7 +14,7 @@ class LoggingControllerSpec extends Specification {
         controller.log = Mock(Logger)
     }
 
-    void "test something"() {
+    void "index action writes to logs"() {
         when:
         controller.index()
 
